@@ -26,7 +26,7 @@ This project implements a simulation environment where autonomous cars learn to 
    - Adjust parameters in `config.txt` to customize NEAT settings such as mutation rates, population size, and neural network structure.
 
 3. **Run the Simulation**:
-   - Execute the main script (`python main.py`) to start the simulation.
+   - Execute the main script (`python newcar.py`) to start the simulation.
    - The simulation window will display the evolving behavior of the cars and relevant statistics.
 
 ## Configuration
