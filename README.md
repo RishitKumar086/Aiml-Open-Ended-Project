@@ -16,6 +16,24 @@ This project implements a simulation environment where autonomous cars learn to 
 
 - **Visualization**: Real-time visualization of car movements, radar sensor outputs, and key simulation metrics like current generation and number of active cars.
 
+## Algorithm
+
+ - **NEAT Algorithm:NEAT evolves neural networks with varying topologies, adjusting both the weights and 
+   the structure of the network. The algorithm involves selection, mutation, and crossover to generate new populations 
+   of neural networks. Fitness evaluation is used to measure the performance of each neural network, guiding 
+   the evolution process.
+
+- **Collision Detection:Each car checks for collisions by examining the color of the pixels at its corners.
+   If any corner of the car sprite touches a white pixel, the car is considered crashed.
+  
+- **Sensor (Radar) Calculation:
+  Radars are simulated as lines extending from the car at different angles.
+  Each radar measures the distance to the nearest border, which is used as input for the neural network.
+
+- **Fitness Calculation:
+  The fitness of each car (and hence its neural network) is based on the distance traveled and the time it remains alive.
+  This encourages neural networks to drive the car efficiently and avoid collisions for as long as possible.
+
 ## How to Run
 
 1. **Install Dependencies**:
